@@ -1,0 +1,47 @@
+<!--pages/myreportDetail/myreportDetail.wxml-->
+<view class="lawAdvice_articlebox">
+  <view class="lawAdvice_article_contetn">
+    <h4>#{{lawListTitle}}#</h4>
+    <text>{{lawListTime}}</text>
+    <text>{{lawListAdress}}</text>
+    <p>{{lawListContent}}</p>
+  </view>
+  <view class="lawAdvice_reply">
+    <h4>反馈回复</h4>
+    <!-- <text>暂无回复</text> -->
+    <view>
+      <p>{{lawListReplyTime}}  管理员</p>
+      <text>{{lawListReply || "暂无回复"}}</text>
+    </view>
+  </view>
+  <view class="lawAdvice_comment" wx:if="{{radioApply}}">
+    <h4>满意度评价</h4>
+    <view class="lawAdvice_contact">
+      <text>是否及时联系</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>
+          {{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="lawAdvice_contact">
+      <text>是否解决问题</text>
+      <radio-group class="radio-group" bindchange="radioQuestion">
+        <label class="radio" wx:for="{{question}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="lawAdvice_contact">
+      <text>答案是否满意</text>
+      <radio-group class="radio-group" bindchange="radioAnswer">
+        <label class="radio" wx:for="{{reply}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <button class="agreen_button" bindtap="ifAgreen" wx:if="{{redioButton}}">提交</button>
+  </view>
+</view>
+

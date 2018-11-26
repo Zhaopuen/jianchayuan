@@ -1,0 +1,145 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx4191628a776c1ce7",
+	"projectname": "procuratorate",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 16,
+			"list": [
+				{
+					"id": -1,
+					"name": "logs",
+					"pathName": "pages/logs/logs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "about",
+					"pathName": "pages/about/about",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "news",
+					"pathName": "pages/news/news",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "newsdetail",
+					"pathName": "pages/newsDetail/newsDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "lawadvice",
+					"pathName": "pages/lawAdvice/lawAdvice",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "lawadvicedetail",
+					"pathName": "pages/lawAdvicedetail/lawAdvicedetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "lawadvicearticle",
+					"pathName": "pages/lawAdviceArticle/lawAdviceArticle",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mylawadvice",
+					"pathName": "pages/myLawadvice/myLawadvice",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mysuggest",
+					"pathName": "pages/mySuggest/mySuggest",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "report",
+					"pathName": "pages/report/report",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ask",
+					"pathName": "pages/question-ask/question-ask",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "template",
+					"pathName": "pages/template/template",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "usertype",
+					"pathName": "pages/usertype/usertype",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "myreportdetail",
+					"pathName": "pages/myreportDetail/myreportDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "myreport",
+					"pathName": "pages/myreport/myreport",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "myreportnew",
+					"pathName": "pages/myreportnew/myreportnew",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "xiaosuolist",
+					"pathName": "pages/xiansuolist/xiansuolist"
+				}
+			]
+		}
+	}
+}

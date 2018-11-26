@@ -1,0 +1,7 @@
+<!--pages/usertype/usertype.wxml-->
+<view class="usertype_box">
+  <view class="usertype_check" wx:for="{{items}}" bindtap="checkboxChange">
+    <text>{{item.name}}</text>
+    <icon class="iconfont icon-check" wx:if="{{item.checked}}"></icon>
+  </view>
+</view>

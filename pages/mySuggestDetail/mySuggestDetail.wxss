@@ -1,0 +1,54 @@
+/* pages/mySuggestDetail/mySuggestDetail.wxss */
+.lawAdvice_articlebox{
+  width:100%;
+  height:100vh;
+  background:#f8f8f8;
+}
+.lawAdvice_article_contetn{
+  width:92%;
+  height:auto;
+  overflow: hidden;
+  background:#fff;
+  padding:4%;
+}
+.lawAdvice_article_contetn h4{
+  display:block;
+  line-height:60rpx;
+  font-size:0.9rem;
+  color:#333;
+  font-weight: bold;
+}
+.lawAdvice_article_contetn text{
+  font-size:0.8rem;
+  line-height: 60rpx;
+  color:#999;
+  display:block;
+}
+.lawAdvice_article_contetn p{
+  font-size:0.8rem;
+  line-height: 60rpx;
+  color:#555;
+}
+.lawAdvice_reply{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+  background:#fff;
+  margin-top:3%;
+}
+.lawAdvice_reply h4{
+  display: block;
+  font-size:0.8rem;
+  color:#333;
+  /* line-height: 65rpx; */
+  border-bottom:1px solid #d9d9d9;
+  padding:4%;
+  font-weight:bold;
+}
+.lawAdvice_reply text{
+  display: block;
+  font-size:0.8rem;
+  color:#777;
+  line-height:70rpx;
+  padding:4%;
+}

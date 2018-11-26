@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+<view class="about_box">
+  <view class="about_mid">
+    <!-- <h4>{{articleTitle}}</h4> -->
+    <text>{{articleConten}}</text>
+  </view>
+</view>

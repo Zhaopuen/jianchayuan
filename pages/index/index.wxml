@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<import src="../template/template.wxml" />
+<template is="tabbar" data="{{tabbar}}"/>
+<view class="container">
+  <!-- 轮播 -->
+  <view class='banner_list'>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="banner_swipers">
+      <block wx:for="{{lunbo}}" wx:key="index">
+        <swiper-item>
+          <image src="https://procuratorate.fengsh.cn{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="gongyisusong">
+      <navigator url="../about/about">
+        <view class="loveicon">
+          <icon class="iconfont icon-susong"></icon>
+        </view>
+        <view class="lovegongyi">
+          <text>公益诉讼</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  
+ <!-- 线索举报 -->
+  <view class="clue_box">
+  <view class="gongyi_phonebox">
+    <view class="gongyi_phone" bindtap="reportPhone">
+      <view class="loveicon_phone">
+        <icon class="iconfont icon-phone"></icon>
+      </view>
+      <view class="lovegongyi_phone">
+        <text>举报电话</text>
+      </view>
+    </view>
+  </view>
+   
+    <view class="clue_jubao_title">
+      <image src="../../images/xs.png"><text>线索举报</text></image>
+    </view>
+    <!-- <view class="clue_jubao_title" style="background:url('../../images/xs.png') no-repeat ">
+      <text>线索举报</text>
+    </view> -->
+
+    <view class="clue_boxlist">
+      <view class="clue_boxlistli" wx:for="{{xiansuo}}">
+        <navigator url="../reportxiansuo/reportxiansuo?id={{item.id}}">
+          <view class="clue_boxlistback">
+            <image src="https://procuratorate.fengsh.cn{{item.pic}}"></image>
+            <!-- <h5>{{item.name}}</h5> -->
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 法律服务 -->
+  <view class="clue_box" style="padding-bottom:160rpx;">
+    <view class="clue_jubao_titlefl">
+      <image src="../../images/xs.png"><text>法律服务</text></image>
+    </view>
+    <!-- <view class="clue_jubao_titlefl" style="background:url('../../images/xs.png') no-repeat ">
+      <text>法律服务</text>
+    </view> -->
+    <view class="clue_boxlist" style="margin-top:110rpx;">
+      <view class="clue_boxlistli" wx:for="{{serveList}}">
+        <navigator url="../news/news?id={{item.id}}">
+          <view class="clue_boxlistback">
+            <image src="https://procuratorate.fengsh.cn{{item.pic}}"></image>
+            <!-- <h5>{{item.name}}</h5> -->
+          </view>
+        </navigator>
+      </view>
+      <!-- <view class="clue_boxlistli">
+        <navigator url="../lawList/lawList">
+          <view class="clue_boxlistback">
+            <image src="../../images/fl.png"></image>
+            <h5>法律宣传</h5>
+          </view>
+        </navigator>
+      </view> -->
+
+      <view class="clue_boxlistli">
+        <navigator url="../lawAdvice/lawAdvice">
+          <view class="clue_boxlistback">
+            <image src="../../images/zixun.png"></image>
+            <!-- <h5>法律咨询</h5> -->
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  
+  
+</view>

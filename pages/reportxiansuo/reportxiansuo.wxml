@@ -1,0 +1,107 @@
+<import src="/components/toast.wxml"></import>
+<import src="../template/template.wxml" />
+<template is="tabbar" data="{{tabbar}}"/>
+<template is="toast" data="{{...$wux.toast}}"></template>
+<form bindsubmit="reportCubmit" reportSubmit="true">
+  <view class="report_box">
+    <view class="report_item">
+        <view>
+            <!-- <icon class="iconfont icon-type type_iconclass"></icon> -->
+            <image src="../../images/r1.png"></image>
+            <span class="report_name">线索类型</span>
+            <text class="report_rightText ell" wx:if="{{category_name.name}}">{{category_name.name}}</text>
+            <picker bindchange="bindCasPickerChange" value="{{casIndex}}" range="{{xiansuostyle}}" data-val='casIndex' class="picker_select">
+              <view>
+                <p>{{xiansuostyle[casIndex]}}</p>
+              </view>
+            </picker>
+        </view>
+        <view class="line"></view>
+        <view>
+            <!-- <icon class="iconfont icon-typedetail type_iconclass"></icon> -->
+            <image src="../../images/r2.png"></image>
+            <span class="report_name">举报详情</span>
+        </view>
+        <view>
+            <textarea maxlength="100" name="reportText" placeholder="具体说明举报事由" value="{{concent}}" bindinput='bindTextAreaBlur'></textarea>
+        </view>
+        <view>
+            <!-- <icon class="iconfont icon-talk type_iconclass"></icon> -->
+            <image src="../../images/r3.png"></image>
+            <span class="report_name">语音信息</span>
+            <button bindtouchend="bindVoiceEnd" bindtouchstart="bindVoiceStart" class="record {{voiceState==0?'record-hover1':''}}" hoverClass="record-hover" type="primary" wx:if="{{canVoice}}">{{voiceState==1?'按住 说话':'松开 结束'}}</button>
+            <button bindopensetting="bindopensetting" bindtap="openSet" class="record openSet" hoverClass="none" openType="openSetting" type="primary" wx:else>需要用户授权相关功能</button>
+        </view>
+        <view wx:if="{{tempFilePath.length>0}}">
+            <i class="report_icon"></i>
+            <span class="report_name"></span>
+            <span class="voice">
+                <block wx:for="{{tempFilePath}}" wx:key="index">
+                  <image src="../../images/report_05.png" wx:if="{{play_fileIndex===index}}"></image>
+                  <image catchtap="play" data-fileIndex="{{index}}" src="../../images/report_06.png" wx:else></image>
+                </block>
+            </span>
+        </view>
+        <view class="line"></view>
+        <!-- 上传视频 -->
+        <view>
+          <!-- <icon class="iconfont icon-video type_iconclass"></icon> -->
+          <image src="../../images/video.jpg"></image>
+          <span class="report_name">上传视频</span>
+          <button bindtap='upVideo' class="video" class="record" hover-class="record-hover" style="color:#fff;">上传视频</button>
+          <view class="video-box" wx:if="{{video}}" style="width:100%;height:500rpx;">
+              <video class="video" src="{{video}}" style="width:100% !important;height:100% !important;"></video>
+          </view>
+        </view>
+        <view class="line"></view>
+        <view bindtap="getLocation" wx:if="{{canLocation}}">
+            <!-- <icon class="iconfont icon-location type_iconclass"></icon> -->
+            <image src="../../images/r4.png"></image>
+            <span class="report_name">位置信息</span>
+            <text class="report_address ell">{{address}}</text>
+        </view>
+        <view bindtap="openSet" wx:else>
+            <i class="reportIcon_08 report_icon"></i>
+            <span class="report_name">位置信息</span>
+            <button bindopensetting="bindopensetting" class="record openSet" hoverClass="none" openType="openSetting" type="primary">需要用户授权相关功能</button>
+        </view>
+        <view class="line"></view>
+        <view class="report_detail">
+        <!-- <icon class="iconfont icon-photo type_iconclass"></icon> -->
+        <image src="../../images/r5.png" style="width:25px;height:25px;"></image>
+        <text>照片信息</text>
+        <!-- 上传图片 -->
+        <view class="question-images">
+            <block wx:for="{{images}}" wx:key="*this">
+              <view class="q-image-wrap">
+                <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview">
+                </image>
+                <icon class="iconfont icon-detele" data-idx="{{index}}" bindtap="removeImage"></icon>
+              </view>
+            </block>
+            <view  class="q-image-wrap">
+              <image src="../../images/photo.png" bindtap="chooseImage" wx:if="{{images.length < 6}}"></image>
+            </view>
+          </view>
+          <!-- 上传图片结束 -->
+        </view>
+        <view class="line"></view>
+        <view>
+            <!-- <icon class="iconfont icon-typephone type_iconclass"></icon> -->
+            <image src="../../images/r6.png"></image>
+            <span class="report_name">手机号码</span>
+            <input maxlength="11" name="reportPhone" placeholder="联系电话 严格保密" type="number" bindinput="phoneInput" value="{{phoneValue}}"></input>
+        </view>
+        <view class="line"></view>
+        <view class="direction">
+            <checkbox-group bindchange="checkboxChange">
+                <label class="checkbox">
+                    <checkbox checked="{{isChecked}}" color="#0088cc" value="1"></checkbox>
+                    <span catchtap="agreeExplain">同意《诉讼举报说明》</span>
+                </label>
+            </checkbox-group>
+        </view>
+    </view>
+    <button class="submit" disabled="{{!isChecked}}" bindtap="reportSubmit" type="primary">提 交</button>
+  </view>
+</form>

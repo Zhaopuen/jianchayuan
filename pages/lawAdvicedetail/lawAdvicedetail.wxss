@@ -1,0 +1,61 @@
+/* pages/lawAdvicedetail/lawAdvicedetail.wxss */
+.lawAdevice_detailbox{
+  width:100%;
+  height:100vh;
+  background: #f8f8f8;
+}
+.lawAdviceDetail_name{
+  width:92%;
+  height:80rpx;
+  border-bottom:1px solid #d9d9d9;
+  padding:0 4%;
+  background: #fff;
+}
+.lawAdviceDetail_name text{
+  /* display:block; */
+  float:left;
+  font-size: 0.8rem;
+  line-height: 80rpx;
+  width:20%;
+}
+.lawAdviceDetail_name input{
+  width:70%;
+  float:right;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size:0.8rem;
+  text-align: right;
+  /* margin-right:-80rpx; */
+}
+.lawadvice_title text{
+  font-size:0.8rem;
+  padding:0 4%;
+  line-height:90rpx;
+  color:#666;
+}
+.lawadvice_title textarea{
+  width:91.6%;
+  height:150rpx;
+  border:1px solid #d9d9d9;
+  font-size:0.8rem;
+  padding:4%;
+  background: #fff;
+}
+.law_advice_butyton{
+  width:92%;
+  height:80rpx;
+  color:#fff;
+  background:#82B954;
+  border-radius:4px;
+  margin-top: 80rpx;
+  line-height: 80rpx;
+  font-size:0.8rem;
+}
+.picker_select{
+  float:right;
+  /* margin-right:80rpx; */
+}
+.picker_select view p{
+  font-size:0.8rem;
+  line-height:75rpx;
+}

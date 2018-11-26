@@ -1,0 +1,17 @@
+/* pages/about/about.wxss */
+.about_box{
+  color:#333;
+  font-size:0.75rem;
+  line-height: 60rpx;
+  width:100%;
+}
+.about_mid{
+  width:94%;
+  height:auto;
+  padding:3%;
+}
+.about_box h4{
+  display: block;
+  text-align: center;
+  font-size:0.9rem !important;
+}

@@ -1,0 +1,27 @@
+<view class="lawAdevice_detailbox">
+  <view class="lawAdviceDetail_name">
+    <text>姓名</text>
+    <input type="text" placeholder='请输入' value="{{userInfo.nickname}}"></input>
+  </view>
+  <view class="lawAdviceDetail_name">
+    <text>联系方式</text>
+    <input type="text" placeholder='请输入' value="{{phoneValue}}" bindinput='phoneInput' maxlength='11'></input>
+  </view>
+  <view class="lawAdviceDetail_name">
+    <text>咨询类别</text>
+    <picker bindchange="bindCasPickerChange" value="{{casIndex}}" range="{{casArray}}" class="picker_select">
+      <view>
+       <p>{{casArray[casIndex]}}</p>
+      </view>
+     </picker>
+  </view>
+  <view class="lawadvice_title">
+    <text>咨询标题</text>
+    <textarea type="text" placeholder='请输入标题，简要描述问题，30字以内' value='{{concent}}'   bindblur='bindTextAreaBlur'   focus="{{focus}}"></textarea>
+  </view>
+  <view class="lawadvice_title">
+    <text>咨询内容</text>
+    <textarea type="text" placeholder='请输入咨询内容' value="{{lawContent}}" bindinput='lawAdviceContent' focus="{{focus}}" ></textarea>
+  </view>
+  <button class="law_advice_butyton" bindtap="lawAdvice">提交</button>
+</view>

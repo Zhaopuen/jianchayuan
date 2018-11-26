@@ -1,0 +1,13 @@
+<!--pages/news/news.wxml-->
+<view class="news_box">
+  <view wx:for="{{newsList}}">
+    <navigator url="../newsDetail/newsDetail?id={{item.id}}&parent={{parent}}">
+      <view class="news_boxlist">
+        <image src="{{item.pic_url}}"></image>
+        <h4>{{item.title}}</h4>
+        <text>{{item.content}}</text>
+        <p>{{item.create_time}}</p>
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+<!--pages/lawAdvice/lawAdvice.wxml-->
+<view class="law_advice">
+  <view class="law_advice_serch"> 
+    <navigator url="../myLawadvice/myLawadvice">
+      <icon class="iconfont icon-userzixun"></icon>
+    </navigator>
+    <view class="law_advice_searchbox">
+      <input type="text" bindinput="keywordsInputEvent" id="keyword" name="keyword" placeholder="请输入您要搜索的内容" value="{{keyword}}"></input>
+      <icon class="iconfont icon-search searchidcons" bindtap="lawSearch"></icon>
+    </view>
+  </view>
+  <view  wx:for="{{lawAdviceList}}">
+    <navigator url="../lawAdviceArticle/lawAdviceArticle?id={{item.id}}">
+      <view class="law_advice_list">
+        <h4>{{item.title}}</h4>
+        <text>{{item.replycontent || "暂无回复"}}</text>
+      </view>
+    </navigator>
+  </view>
+  
+  
+  <navigator url="../lawAdvicedetail/lawAdvicedetail">
+    <view class="law_advice_button">
+      <icon class="iconfont icon-suggest"></icon>
+      <text>咨询</text>
+    </view>
+  </navigator>
+
+  <view class="jishubox" wx:if="{{jishuShow}}">
+    <view class="jishumid">
+      <view class="jushu_close">
+        <text>杭州始祖鸟技术支持</text>
+        <icon class="iconfont icon-closes" bindtap="zhichiClose"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- jishuzhichi -->
+  

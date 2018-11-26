@@ -1,0 +1,11 @@
+<!--pages/mySuggestDetail/mySuggestDetail.wxml-->
+<view class="lawAdvice_articlebox">
+  <view class="lawAdvice_article_contetn">
+    <text>日期：{{date}} </text>
+    <p>{{title}}</p>
+  </view>
+  <view class="lawAdvice_reply">
+    <h4>反馈回复</h4>
+    <text>{{replay || "暂无回复"}}</text>
+  </view>
+</view>

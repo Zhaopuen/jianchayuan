@@ -1,0 +1,85 @@
+<!--pages/myreportDetail/myreportDetail.wxml-->
+<view class="lawAdvice_articlebox">
+  <view class="lawAdvice_article_contetn">
+    <h4>#{{lawListTitle}}#</h4>
+    <text>{{lawListTime}}</text>
+    <text>{{lawListAdress}}</text>
+    <p>{{lawListContent}}</p>
+  </view>
+  <view class="lawimg">
+    <h4>图片：</h4>
+    <view class="lawimgimg">
+      <text wx:if="{{!lawImgShow}}" class="novideo">暂无图片</text>
+      <!-- <image src="{{item}}" bindtap="imgYu" wx:for="{{lawImg}}" wx:if="{{lawImgShow}}" data-list="{{item}}" data-src="{{item}}" wx:for-item="item"></image> -->
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="banner_swipers" style="height:15rem;">
+        <block wx:for="{{lawImg}}" wx:key="index">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" wx:if="{{lawImgShow}}" data-list="{{item}}" data-src="{{item}}" wx:for-item="item" bindtap="imgYu"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class="lawimg">
+    <h4>视频：</h4>
+    <view>
+       <text wx:if="{{!lawVideoShow}}" class="novideo">暂无视频</text>
+       <video src="{{lawVideo}}" style="width:92%;margin:4%;" wx:if="{{lawVideoShow}}"></video>
+    </view>
+    
+  </view>
+  <view class="lawimg">
+    <h4>语音：</h4>
+    <view class="lawaudionss">
+      <text class="novideo" wx:if="{{!lawAudioShow}}">暂无语音</text>
+      <!-- <audio wx:for="{{lawAudio}}" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{item}}" id="myAudio" controls loop wx:if="{{lawAudioShow}}"></audio> -->
+      <audio wx:for="{{lawAudio}}" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{item}}" action="{{action}}" controls loop wx:if="{{lawAudioShow}}"></audio>
+
+<button type="primary" bindtap="audioPlay" class="play_button" style="margin:20rpx 0;">播放</button>
+<button type="primary" bindtap="audioPause" class="play_button">暂停</button>
+    </view>
+  </view>
+  <view class="lawAdvice_reply">
+    <h4>反馈回复</h4>
+    <!-- <text>暂无回复</text> -->
+    <view class="xiansuosss">
+      <p>{{lawListReplyTime}}  管理员</p>
+      <text wx:if="{{xiansuoShow}}">{{lawListReply}}</text>
+      <view wx:if="{{!xiansuoShow}}">
+        <textarea class="repleyxiansuo" value='{{concent}}'   bindinput='bindTextAreaBlur'></textarea>
+        <button bindtap='xiansuoreply' class="agreen_buttonss">提交</button>
+      </view>
+    </view>
+  </view>
+  <view class="lawAdvice_comment" wx:if="{{radioApply}}">
+    <h4>满意度评价</h4>
+    <view class="lawAdvice_contact">
+      <text>是否及时联系</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>
+          {{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="lawAdvice_contact">
+      <text>是否解决问题</text>
+      <radio-group class="radio-group" bindchange="radioQuestion">
+        <label class="radio" wx:for="{{question}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="lawAdvice_contact">
+      <text>答案是否满意</text>
+      <radio-group class="radio-group" bindchange="radioAnswer">
+        <label class="radio" wx:for="{{reply}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <button class="agreen_button" bindtap="ifAgreen" wx:if="{{redioButton}}">提交</button>
+  </view>
+</view>
+

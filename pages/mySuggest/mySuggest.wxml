@@ -1,0 +1,21 @@
+<!--pages/mySuggest/mySuggest.wxml-->
+<view class="law_advice">
+  <view style="padding-bottom:120rpx;">
+    <view class="law_advice_list" wx:for="{{fankui}}">
+      <navigator url="../mySuggestDetail/mySuggestDetail?id={{item.id}}">
+      <view>
+          <h4>{{item.title}}</h4>
+          <text>{{item.replycontent || "暂无回复"}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  
+  <navigator url="../feedback/feedback">
+    <view class="law_advice_button">
+      <icon class="iconfont icon-suggest"></icon>
+      <text>反馈</text>
+    </view>
+  </navigator>
+</view>
+

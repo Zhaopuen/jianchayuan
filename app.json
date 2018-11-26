@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/report/report",
+    "pages/about/about",
+    "pages/news/news",
+    "pages/newsDetail/newsDetail",
+    "pages/lawList/lawList",
+    "pages/lawAdvice/lawAdvice",
+    "pages/lawAdvicedetail/lawAdvicedetail",
+    "pages/lawAdviceArticle/lawAdviceArticle",
+    "pages/myLawadvice/myLawadvice",
+    "pages/mySuggest/mySuggest",
+    "pages/mySuggestDetail/mySuggestDetail",
+    "pages/feedback/feedback",
+    "pages/myreport/myreport",
+    "pages/myreportDetail/myreportDetail",
+    "pages/usertype/usertype",
+    "pages/agreenReport/agreenReport",
+    "pages/template/template",
+    "pages/logins/logins",
+    "pages/reportxiansuo/reportxiansuo",
+    "pages/lawNew/lawNew",
+    "pages/myreportnew/myreportnew",
+    "pages/mrreportDetailNew/mrreportDetailNew",
+    "pages/xiaosuo/xiaosuo",
+    "pages/xiansuolist/xiansuolist"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#253416",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"#333"
+  }
+}

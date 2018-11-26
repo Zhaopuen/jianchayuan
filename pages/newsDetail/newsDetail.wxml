@@ -1,0 +1,22 @@
+<!--pages/newsDetail/newsDetail.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="news_detail_box">
+  <view class="news_detail">
+    <h3>{{detailTitle}}</h3>
+    <view class="news_source">
+      <!-- <text>来源：万安检察院</text> -->
+      <p>日期：2018-09-15</p>
+    </view>
+    <!-- <image src="https://procuratorate.fengsh.cn{{detailPic}}" class="newd_detailimg"></image> -->
+    <view class="news_dcontent">
+      <!-- <text>{{detailContent}}</text> -->
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" ></template>
+    </view>
+    <!-- <view class="news_account">
+      <view class="news_num">浏览数：110</view>
+      <view class="news_account_box">
+        <icon class="iconfont icon-zan zanicons" ></icon>5
+      </view>
+    </view> -->
+  </view>
+</view>

@@ -1,0 +1,89 @@
+/**app.wxss**/
+@font-face {
+  font-family: 'iconfont';  /* project id 842871 */
+  src: url('//at.alicdn.com/t/font_842871_mzxn25qfnpj.eot');
+  src: url('//at.alicdn.com/t/font_842871_mzxn25qfnpj.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_842871_mzxn25qfnpj.woff') format('woff'),
+  url('//at.alicdn.com/t/font_842871_mzxn25qfnpj.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_842871_mzxn25qfnpj.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:60rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*本项目使用的图标 */
+.icon-phone:before{content: '\e6c3';}
+.icon-susong:before{content: '\e698';}
+.icon-user:before{content: '\e602';}
+.icon-suggest:before{content: '\e601';}
+.icon-about:before{content: '\e62b';}
+.icon-report:before{content: '\e627';}
+.icon-jiantou:before{content: '\e605';}
+.icon-zan:before{content: '\e607';}
+.icon-userzixun:before{content: '\e603';}
+.icon-search:before{content: '\e696';}
+.icon-type:before{content: '\e624';}
+.icon-typephone:before{content: '\e606';}
+.icon-typedetail:before{content: '\e665';}
+.icon-photo:before{content: '\e859';}
+.icon-location:before{content: '\e600';}
+.icon-talk:before{content: '\e60a';}
+.icon-detele:before{content: '\e61e';}
+.icon-check:before{content: '\e608';}
+.icon-video:before{content: '\e656';}
+.icon-closes:before{content: '\e61a';}
+/* 自定义tabbar */
+.tabbar_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    /* height: 100rpx; */
+    padding: 10rpx 0;
+    border-top: 6rpx solid #d7d7d7; 
+    border-top-color:#a5cd39 !important;
+    background:linear-gradient(#2B371F,#1F2813,#0C1207) !important;
+}
+
+.tabbar_nav{
+    align-items: center;
+    font-size: 28rpx;
+    text-align: center;
+    margin:0 auto;
+}
+
+.tabbar_icon{
+    width: 50rpx;
+    height:50rpx;
+    display: block;
+    margin: 0 auto;
+}
+.tabbar_nav:nth-child(2) {
+  position: relative;
+}
+.tabbar_nav:nth-child(2) image{ 
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-62rpx;
+    width:100rpx;
+    height:100rpx;
+}
+.tabbar_nav:nth-child(2) text{  
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.navigator-hover{
+  background:transparent !important;
+  opacity: 1 !important;
+}

@@ -1,0 +1,23 @@
+/* pages/feedback/feedback.wxss */
+.feedback_box{
+  width:100%;
+  height:100vh;
+  background:#f8f8f8;
+}
+.feedback textarea{
+  width:94%;
+  height:300rpx;
+  padding:3%;
+  background:#fff;
+  border-bottom:1px solid #d9d9d9;
+  font-size:0.8rem;
+}
+.feedback button{
+  width:92%;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size:0.8rem;
+  background:#82B954;
+  margin:6% 4%;
+  color:#fff;
+}

@@ -1,0 +1,9 @@
+<!--pages/agreenReport/agreenReport.wxml-->
+<view class="agreen_report">
+  <view class="agreen_reportcontetn">
+    <!-- <h4>{{articleTitle}}</h4> -->
+    <p>
+      {{articleConten}}
+    </p>
+  </view>
+</view>

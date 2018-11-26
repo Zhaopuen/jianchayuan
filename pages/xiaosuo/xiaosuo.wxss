@@ -1,0 +1,146 @@
+/* pages/myreportDetail/myreportDetail.wxss */
+/* pages/lawAdviceArticle/lawAdviceArticle.wxss */
+.play_button{
+  background:#71bb42!important
+}
+.lawAdvice_articlebox{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+  background:#f8f8f8;
+}
+.lawAdvice_article_contetn{
+  width:92%;
+  height:auto;
+  overflow: hidden;
+  background:#fff;
+  padding:4%;
+}
+.lawAdvice_article_contetn h4{
+  display:block;
+  line-height:60rpx;
+  font-size:0.9rem;
+  color:#333;
+  font-weight: bold;
+}
+.lawAdvice_article_contetn text{
+  font-size:0.8rem;
+  line-height: 60rpx;
+  color:#999;
+  display:block;
+}
+.lawAdvice_article_contetn p{
+  font-size:0.8rem;
+  line-height: 60rpx;
+  color:#555;
+}
+.lawAdvice_reply{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+  background:#fff;
+  margin-top:3%;
+}
+.lawAdvice_reply h4{
+  display: block;
+  font-size:0.8rem;
+  color:#333;
+  border-bottom:1px solid #d9d9d9;
+  padding:4%;
+  font-weight:bold;
+}
+.lawAdvice_reply text{
+  display: block;
+  font-size:0.8rem;
+  color:#777;
+  line-height:60rpx;
+}
+.lawAdvice_reply .xiansuosss{
+  display: block;
+  font-size:0.8rem;
+  color:#999;
+  line-height:50rpx;
+  padding:4%;
+}
+.lawimg{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+  background:#fff;
+  margin-top:3%;
+}
+.lawimg h4{
+  display: block;
+  font-size:0.8rem;
+  color:#333;
+  border-bottom:1px solid #d9d9d9;
+  padding:4%;
+  font-weight:bold;
+}
+.lawAdvice_comment{
+  padding:3%;
+  height:auto;
+  overflow: hidden;
+  width:94%;
+}
+.lawAdvice_comment h4{
+  font-size:1rem;
+  color:#000;
+  line-height: 75rpx;
+}
+.lawAdvice_contact text{
+  padding:2%;
+  color:#444;
+  font-size:0.85rem;
+  display: block;
+  float:left;
+}
+.radio-group{
+  line-height:65rpx;
+  font-size:0.85rem;
+  margin-top: 15rpx;
+}
+.radio{
+  margin-right:15rpx;
+}
+.agreen_buttonss{
+  width:100%;
+  margin:4% 0 0 0;
+  background:#81B754;
+  border-radius:4px;
+  color:#fff;
+  font-size:0.8rem;
+}
+.agreen_button{
+  width:92%;
+  margin:4%;
+  background:#81B754;
+  border-radius:4px;
+  color:#fff;
+  font-size:0.8rem;
+}
+.lawimgimg{
+  width:100%;
+  margin:3% 0;
+}
+.lawimgimg image{
+  width:100%;
+  height:15rem;
+  /* float:left; */
+  /* margin: 2%; */
+}
+.lawaudionss{
+  width:90%;
+  margin:3% 5%;
+}
+.novideo{
+  padding:4%;
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+.repleyxiansuo{
+  border:1px solid #d9d9d9;
+  width:94%;
+  padding:20rpx;
+  color:#333;
+}

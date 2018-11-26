@@ -1,0 +1,23 @@
+<view class="body">
+  <!-- <view class="nav bc_white">
+    <view class="{{selected?'red':'default'}}" bindtap="selected">全部</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="selected1">已处理</view>
+    <view class="{{selected2?'red':'default'}}" bindtap="selected2">未处理</view>
+  </view> -->
+  <!-- 全部 -->
+  <view>
+    <!-- <view class="law_advice_searchbox">
+      <input type="text" placeholder='请输入咨询标题' bindinput="reportSearchInput" value="{{reportSearch}}"></input>
+      <icon class="iconfont icon-search searchidcons" bindtap='reportSearch'></icon>
+    </view> -->
+    <h3 wx:if="{{gonereport}}" class="report">暂时没有举报</h3>
+      <view wx:for="{{lawAdviceList}}"  wx:if="{{!gonereport}}">
+        <navigator url="../xiaosuo/xiaosuo?id={{item.id}}">
+          <view class="law_advice_list" >
+            <h4>{{item.details_content}}</h4>
+            <text>{{item.replycontent || "暂无回复"}}</text>
+          </view>
+        </navigator>
+      </view>
+  </view>
+</view>

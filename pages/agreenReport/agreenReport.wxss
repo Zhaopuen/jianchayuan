@@ -1,0 +1,17 @@
+/* pages/agreenReport/agreenReport.wxss */
+.agreen_report{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+.agreen_reportcontetn{
+  width:94%;
+  padding:3%;
+  line-height:60rpx;
+  font-size:0.8rem;
+  color:#333;
+}
+.agreen_reportcontetn h4{
+  text-align: center;
+  display:block;
+}

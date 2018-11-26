@@ -1,0 +1,92 @@
+.my_box{
+  height:100vh;
+  background: #f8f8f8;
+  width:100%;
+}
+.my_userinfo_box{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+  background:#fff;
+  padding:50rpx 0;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.user_class{
+  width:92%;
+  height:85rpx;
+  line-height: 80rpx;
+  color:#333;
+  background: #fff;
+  font-size:0.78rem;
+  padding:0 4%;
+  margin:2% 0;
+}
+.user_icons{
+  font-size:1rem;
+  color:#B2C696;
+  margin-right:15rpx;
+}
+.user_rightjiantou{
+  float:right;
+  color:#B2C696;
+  font-size:1rem;
+  margin-right: 0;
+}
+.my_mine{
+  width:92%;
+  height:auto;
+  overflow: hidden;
+  padding:0 4%;
+  background:#fff;
+}
+.my_reportBox{
+  width:100%;
+  height:100rpx;
+  line-height: 95rpx;
+  border-bottom:1px solid #d9d9d9;
+  font-size:0.78rem;
+}
+.report_icons{
+  color:#B2C696;
+  font-size:1rem;
+  margin-right:15rpx;
+  float:left;
+}
+.names {
+    text-align: center;
+    line-height: 52rpx;
+    /* margin: 0 0 0 30rpx; */
+    display: inline-block;
+}
+
+.names text {
+    color: #333;
+    font-size: 34rpx;
+    line-height: 120rpx;
+}
+.names image {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius:50%;
+    margin-bottom: 15rpx;
+    vertical-align: middle;
+}
+.usertype_box{
+  margin-left:330rpx;
+}

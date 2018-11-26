@@ -1,0 +1,47 @@
+<!--logs.wxml-->
+<import src="../template/template.wxml" />
+<template is="tabbar" data="{{tabbar}}"/>
+<view class="container my_box">
+  <view class="my_userinfo_box">
+    <view class="userinfo">
+      <view class="names">
+        <image class="content-top-img" src="{{userInfo.avatar}}"></image>
+        <view class="content-top-name">{{userInfo.nickname}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- <navigator url="../usertype/usertype"> -->
+    <view class="user_class">
+      <icon class="iconfont icon-user user_icons"></icon>
+      <text>用户类型</text>
+      <view style="float:right">
+        <span class="usertype_box">{{userType}}</span>
+        <icon class="iconfont icon-jiantou user_rightjiantou"></icon>
+      </view>
+    </view>
+  <!-- </navigator> -->
+  <view class="my_mine">
+    <!-- <navigator url="../myreportnew/myreportnew"> -->
+      <view class="my_reportBox" bindtap="report">
+        <icon class="iconfont icon-report report_icons"></icon>
+        <text>我的举报</text>
+        <icon class="iconfont icon-jiantou user_rightjiantou"></icon>
+      </view>
+    <!-- </navigator> -->
+    <navigator url="../mySuggest/mySuggest">
+      <view class="my_reportBox">
+        <icon class="iconfont icon-suggest report_icons"></icon>
+        <text>意见反馈</text>
+        <icon class="iconfont icon-jiantou user_rightjiantou"></icon>
+      </view>
+    </navigator>
+    <navigator url="../about/about">
+      <view class="my_reportBox" style="border-bottom:0;">
+        <icon class="iconfont icon-about report_icons"></icon>
+        <text>关于我们</text>
+        <icon class="iconfont icon-jiantou user_rightjiantou"></icon>
+      </view>
+    </navigator>
+    
+  </view>
+</view>

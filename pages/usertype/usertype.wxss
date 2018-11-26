@@ -1,0 +1,21 @@
+/* pages/usertype/usertype.wxss */
+.usertype_box{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+.usertype_check{
+  width:92%;
+  padding: 0 4%;
+  height:80rpx;
+  border-bottom:1px solid #d9d9d9;
+  line-height: 80rpx;
+}
+.usertype_check text{
+  font-size:0.8rem;
+  text-align: left;
+}
+.usertype_check icon{
+  float: right;
+  color:#A5CA40;
+}

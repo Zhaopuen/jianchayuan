@@ -1,0 +1,195 @@
+/**index.wxss**/
+navigator {
+  display: inline !important;
+}
+.banner_list{
+  width:100%;
+  height:400rpx;
+  position: relative;
+}
+.slide-image{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+.banner_swipers{
+  width:100%;
+  height:100%;
+}
+.gongyisusong{
+  width:255rpx;
+  height:70rpx;
+  background:#0F4904;
+  position: absolute;
+  bottom:0;
+  right:40rpx;
+  border-radius:4px;
+}
+.loveicon{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+  border:4rpx solid #fff;
+  position: absolute;
+  top:-10rpx;
+  left:-20rpx;
+  text-align: center;
+  float:left;
+  background:#0F4904;
+  line-height: 75rpx;
+}
+.loveicon icon{
+  color:#fff;
+  font-size:1rem;
+}
+.lovegongyi{
+  float:right;
+  width:190rpx;
+  color:#fff;
+  text-align: center;
+  line-height: 70rpx;
+  font-size:0.9rem;
+}
+.gongyi_phonebox{
+  width:100%;
+  height:150rpx;
+  overflow: hidden;
+  position: relative;
+}
+.gongyi_phone{
+  width:255rpx;
+  height:70rpx;
+  background:#0F4904;
+  position: absolute;
+  bottom:0;
+  right:20rpx;
+  border-radius:4px;
+  top:30rpx;
+}
+
+.loveicon_phone{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+  border:4rpx solid #fff;
+  position: absolute;
+  top:-10rpx;
+  left:-20rpx;
+  text-align: center;
+  float:left;
+  background:#0F4904;
+  line-height: 75rpx;
+}
+.loveicon_phone icon{
+  color:#fff;
+  font-size:1rem;
+}
+.lovegongyi_phone{
+  float:right;
+  width:185rpx;
+  color:#fff;
+  text-align: center;
+  line-height: 75rpx;
+  font-size:0.9rem;
+}
+/* 线索举报 */
+.clue_box{
+  width:94%;
+  height:auto;
+  overflow: hidden;
+  margin:0 3%;
+  position: relative;
+}
+.clue_jubao_title{
+  text-align: left;
+  font-size:0.9rem;
+  
+}
+.clue_jubao_title image{
+  height:60rpx;
+  width:100%;
+  position:absolute;
+  top:70rpx;
+  z-indeX:99;
+  bottom:20rpx;
+  margin-bottom:20rpx;
+
+}
+.clue_jubao_title text{
+  position:absolute;
+  left:35rpx;
+  top:11rpx;
+  color:#fff;
+  font-size:0.8rem;
+}
+.clue_jubao_titlefl{
+  text-align: left;
+  font-size:0.9rem;
+  
+}
+.clue_jubao_titlefl image{
+  height:60rpx;
+  width:100%;
+  position:absolute;
+  top:30rpx;
+  z-indeX:99;
+  bottom:20rpx;
+  margin-bottom:20rpx;
+
+}
+.clue_jubao_titlefl text{
+  position:absolute;
+  left:30rpx;
+  top:9rpx;
+  color:#fff;
+  font-size:0.8rem;
+}
+.clue_jubao_title span{
+  width:5rpx;
+  height:35rpx;
+  background:#333;
+  display: block;
+  float:left;
+  margin-right:10rpx;
+  margin-top:8rpx;
+}
+.clue_boxlist{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+  display: flex;
+}
+.clue_boxlistli{
+  flex:1;
+  height:230rpx;
+  border:1px solid #d9d9d9;
+  border-radius:4px;
+  margin-right:1%;
+}
+.clue_boxlistback{
+  width:94%;
+  height:94%;
+  margin:3%;
+  border-radius:4px;
+  position: relative;
+  background: -webkit-linear-gradient(left, #c2e098 , #B0D77A); 
+  background: linear-gradient(to right, #c2e098 , #B0D77A);
+}
+.clue_boxlistback image{
+  width:100%;
+  height:100%;
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
+.clue_boxlistback h5{
+  text-align: center;
+  font-size:0.7rem;
+  position: absolute;
+  bottom:15rpx;
+  width:100%;
+}
